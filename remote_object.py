@@ -12,7 +12,7 @@ class RemoteObject:
     def opcao(self, opt):
         if opt == "1":
             senha = randint(2, 2000)
-            return "Aqui está sua senha: " + senha
+            return "Aqui está sua senha: " + str(senha)
         elif opt == "2":
             return "Se falam de você pelas costas, é sinal que você tá na frente: continue!"
         elif opt == "3":
