@@ -3,10 +3,11 @@ from random import randint
 
 @Pyro4.expose
 class RemoteObject:
-        
+    @Pyro4.expose
     def greet_person(self, nome):
         return "Obrigada pela atenção, " + nome + "!"
     
+    @Pyro4.expose
     def opcao(self, opt):
         if opt == "1":
             senha = randint(2, 2000)
